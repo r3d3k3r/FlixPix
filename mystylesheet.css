@@ -1,0 +1,74 @@
+header {
+    text-align: center;
+    color: white;
+    background-color: orangered;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+nav {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: orange;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: orangered;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+main {
+    text-align: center;
+}
+
+#teamtable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teamtable tr {
+    width: 100%;
+}
+
+#teamtable tr td {
+    width: 16.667%;
+    border: 1px solid black;
+}
+
+#teamtable td img {
+    width: 65%;
+    border: 2px solid orangered;
+    border-radius: 15px;
+}
