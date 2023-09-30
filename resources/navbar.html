@@ -1,0 +1,38 @@
+<nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/problem.html">Problem</a></li>
+      <li><a href="/solution.html">Solution</a></li>
+      <li><a href="/team.html">Team Members</a></li>
+      <li><a href="#">Deliverables</a></li>
+      <li><a href="#">Presentations</a>
+        <ul>
+          <li><a href="/presentations/idea_presentation.html">Idea Presentation</a></li>
+          <li><a href="/presentations/feasibility_presentation.html">Feasibility Presentation</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Labs</a></li>
+      <li><a href="/userstories.html">User Stories</a></li>
+      <li><a href="/glossary.html">Glossary</a></li>
+      <li><a href="/references.html">References</a></li>
+    </ul>
+</nav>
+
+<script>
+  $(document).ready(function() {
+    // Get current page name
+    var currentURL = window.location.href;
+    var pageName = currentURL.substr(currentURL.lastIndexOf('/') + 1);
+    console.log(pageName);
+    // Inspect all <a> tags in the navigation menu
+    $("nav ul li a").each(function() {
+    // Get target page name from href attribute
+    var targetPage = $(this).attr('href').substr($(this).attr('href').lastIndexOf('/') + 1);
+    // Check if target page name matches the current page name
+    if (targetPage === pageName) {
+        // Add the 'active' class to the top level parent <li> tag
+        $(this).parents('li').last().addClass('active');
+    }
+    });
+  });
+</script>
