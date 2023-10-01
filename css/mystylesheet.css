@@ -4,6 +4,7 @@ body {
     padding: 0;
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
+    background-color: #fff;
 }
 
 header {
@@ -12,6 +13,16 @@ header {
     background-color: orangered;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+header h3 {
+    margin: 0px;
+    padding: 5px 0px;
 }
 
 nav {
@@ -48,7 +59,6 @@ nav>ul>li>ul {
     position: absolute;
     background-color: #333;
     text-align: left;
-
     z-index: 1;
 }
 
@@ -79,10 +89,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-nav ul li a:active {
-    color: orangered;
-}
-
+nav ul li a:active,
 nav ul li a:visited {
     color: white;
 }
@@ -97,9 +104,24 @@ footer {
     width: 100%;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover,
+footer a:active {
+    color: orangered;
+}
+
 main {
     text-align: center;
-    margin-bottom: 120px;
+    padding: 0px;
+    margin: 0px 0px 87px 0px;
 }
 
 .TeamList {
@@ -163,3 +185,33 @@ main {
     margin: 0px;
     margin-bottom: 5px;
 }
+
+.SidePanel {
+    width: 35%;
+    height: 600px;
+    padding: 20px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .SidePanel h1 {
+    text-align: center;
+  }
+
+  .SidePanel ul li {
+    padding: 10px 0px;
+  }
+
+  .MainPanel {
+    width: 59%;
+    height: 600px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .MainPanel ul li {
+    padding: 10px 0px;
+  }
