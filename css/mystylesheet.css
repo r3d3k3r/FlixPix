@@ -2,6 +2,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
 }
 
 header {
@@ -100,23 +102,64 @@ main {
     margin-bottom: 120px;
 }
 
-#teamtable {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+.TeamList {
+    padding: 0px;
+    margin: 10px 20px 0px 20px;
+    max-width: 100%;
+    color: #333;
 }
 
-#teamtable tr {
-    width: 100%;
+.TeamList .TeamMember {
+    padding: 0px;
+    margin: 12px 6px;
+    width: 210px;
+    min-height: 625px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#teamtable tr td {
-    width: 16.667%;
-    border: 1px solid black;
+.TeamList .MemberImg {
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
 }
 
-#teamtable td img {
-    width: 65%;
-    border: 2px solid orangered;
-    border-radius: 15px;
+.TeamList .MemberImg img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            
+}
+
+.TeamList .MemberName {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+
+.TeamList .MemberTitle {
+    padding: 0px 10px;
+    padding-top: 5px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.TeamList .MemberBio {
+    text-align: left;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+
+.TeamList .MemberBio p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
 }
