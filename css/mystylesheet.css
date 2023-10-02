@@ -10,7 +10,11 @@ body {
 header {
     text-align: center;
     color: white;
-    background-color: orangered;
+    background: rgb(200,54,0);
+    background: -moz-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    background: linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c83600",endColorstr="#ff8153",GradientType=1);
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -29,7 +33,11 @@ nav {
     margin: 0px;
     padding-top: 5px;
     padding-bottom: 0px;
-    background-color: orange;
+    background: rgb(215,100,0);
+    background: -moz-linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    background: linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d76400",endColorstr="#ffa500",GradientType=1);
 }
 
 nav ul {
@@ -97,7 +105,11 @@ nav ul li a:visited {
 footer {
     text-align: center;
     color: white;
-    background-color: #333;
+    background: rgb(41,41,41);
+    background: -moz-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#808080",GradientType=1);
     position: fixed;
     bottom: 0;
     left: 0;
