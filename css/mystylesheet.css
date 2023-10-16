@@ -148,7 +148,7 @@ main {
 /************************************************** CONTENT PANELS *********************************************************/
 .MainPanel {
     width: 58%;
-    height: calc(100vh - 209px);
+    min-height: calc(100vh - 209px);
     padding: 20px;
     margin: 0px;
     display: inline-block;
