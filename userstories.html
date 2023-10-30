@@ -7,13 +7,58 @@
     <link rel="stylesheet" type="text/css" href="./css/mystylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./resources/pageLayout.js"></script>
+    <style>
+        .justtextalign {
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .textalignbgcolor {
+            text-align: left;
+            background-color: #e6e6e6;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
   <div id="headerContainer"></div>
   <div id="navbarContainer"></div>
   <main>
     <h1>User Stories</h1>
-    <img width="500" src="./images/soon.jpg" />
+      <div class="justtextalign">
+          <h2>Guest</h2>
+      <ul>
+          <li>As a guest, I wish to see the features FlixPicks has to offer.</li>
+          <li>As a guest, I wish to know how FlixPicks works.</li>
+          <li>As a guest, I wish to know whether FlixPicks will be useful for me.</li>
+      </ul>
+      </div>
+      <div class="textalignbgcolor">
+          <h2>Registered User</h2>
+          <ul>
+              <li>As a registered user, I wish to be able to have FlixPicks randomly select a movie for me to watch.</li>
+              <li>As a registered user, I want to be able to see all of my subscribed-to streaming services in one place.</li>
+              <li>As a registered user, I wish to be able to leave comments during the movie and see the most popular parts of the movie.</li>
+              <li>As a registered user, I wish to be able to input multiple movie options and have FlixPicks randomly select an option.</li>
+              <li>As a registered user, I wish to be able to see a personalized library of movies based on my interests that I can manipulate.</li>
+          </ul>
+      </div>
+      <div class="justtextalign">
+          <h2>Streaming Service Representative</h2>
+      <ul>
+          <li>As a representative of one of the streaming services, I want to be able to see the analytics gathered from FlixPicks.</li>
+          <li>As a representative of a streaming service, I want to see how FlixPicks has recommended my content and the data surrounding user viewing.</li>
+          <li>As a representative of a streaming service, I want to know whether FlixPicks has influenced anyone to subscribe to my service.</li>
+      </ul>
+      </div>
+      <div class="textalignbgcolor">
+          <h2>Admin</h2>
+          <ul>
+              <li>As an admin, I need to be able to collect data on user habits (favorite genre, favorite streaming service, even how often each FlixPicks feature is used).</li>
+              <li>As an admin, I would like to see the same types of data that the streaming service representatives would see.</li>
+          </ul>
+      </div>
   </main>
   <div id="footerContainer"></div>
 </body>
