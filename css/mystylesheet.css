@@ -275,3 +275,12 @@ ul.RefList li {
     text-align: center;
     width: 33%;
 }
+
+#heroimagecontainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#heroimagecontainer img {
+    width: 75%;
+}
