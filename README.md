@@ -1,2 +1,2 @@
-# FlixPicks - CS410 Fall 2023 Team Orange
+# FlixPicks - CS411 Spring 2024 Team Orange
 Repository for the FlixPicks website.
